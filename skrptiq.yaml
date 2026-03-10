@@ -1,0 +1,38 @@
+name: "prioritisation-framework-flow"
+display_name: "Prioritisation Framework Flow"
+description: "Apply RICE, ICE, and MoSCoW scoring frameworks to a product backlog and produce ranked recommendations with rationale"
+version: "1.0.0"
+engine: ">=1.0.0"
+
+author:
+  name: "skrptiq"
+  url: "https://hub.skrptiq.ai"
+licence: "MIT"
+repository: "https://github.com/skrpts/prioritisation-framework-flow"
+
+category: "product-manager"
+tags:
+  - "prioritisation"
+  - "rice-scoring"
+  - "ice-scoring"
+  - "moscow"
+  - "backlog-management"
+  - "product-strategy"
+
+requires:
+  services:
+    - "anthropic-claude"
+  permissions: []
+  data_handling:
+    - "product-requirements"
+    - "business-metrics"
+
+contents:
+  skills: 2
+  prompts: 5
+  workflows: 1
+  services: 1
+  sources: 1
+  documents: 1
+  assets: 1
+  total: 12
