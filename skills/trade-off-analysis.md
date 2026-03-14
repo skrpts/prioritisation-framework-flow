@@ -5,7 +5,7 @@ title: Trade-off Analysis
 description: "Analysing trade-offs between competing priorities and constraints to surface key tensions and inform decision-making"
 tags: [Production, Tested]
 connections:
-  - target: claude-service
+  - target: llm-service
     type: runs_on
 metadata:
   estimated_duration: "5-8 minutes"

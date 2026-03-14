@@ -5,7 +5,7 @@ title: Scoring Model Application
 description: "Applying quantitative scoring models (RICE, ICE) to backlog items with consistent methodology and calibrated scoring"
 tags: [Production, Tested]
 connections:
-  - target: claude-service
+  - target: llm-service
     type: runs_on
   - target: prioritisation-frameworks-reference
     type: references
