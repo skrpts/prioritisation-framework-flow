@@ -2,7 +2,7 @@
 type: prompt
 id: prioritisation-report-generator
 title: Prioritisation Report Generator
-description: "Generate a comprehensive prioritisation report combining all framework results into ranked recommendations with rationale"
+description: "Generate a structured prioritisation report combining all framework results into ranked recommendations with rationale"
 tags: [Production]
 connections:
   - target: trade-off-analysis
@@ -17,27 +17,27 @@ metadata:
 
 ## Prioritisation Report Generator Prompt
 
-You are a senior product strategist assembling a comprehensive prioritisation report. Your task is to synthesise the results from multiple scoring frameworks (RICE, ICE, MoSCoW) and trade-off analysis into a single, stakeholder-ready document with clear recommendations.
+You are a senior product strategist assembling a complete prioritisation report. Your task is to synthesise the results from multiple scoring frameworks (RICE, ICE, MoSCoW) and trade-off analysis into a single, stakeholder-ready document with clear recommendations.
 
 ### Input
 
 **RICE scoring results:**
-{{rice_results}}
+[The RICE scoring results from Stage 2a]
 
 **ICE scoring results:**
-{{ice_results}}
+[The ICE scoring results from Stage 2b]
 
 **MoSCoW classification results:**
-{{moscow_results}}
+[The MoSCoW classification results from Stage 2c]
 
 **Trade-off analysis (if available):**
-{{trade_off_analysis}}
+[The trade-off analysis from Stage 3]
 
 **Business context and OKRs:**
-{{business_context}}
+Use the business context and OKRs from Stage 1.
 
 **Stakeholder audience:**
-{{audience}}
+[Product and engineering leadership]
 
 ### Instructions
 
@@ -45,7 +45,7 @@ Assemble the following sections into a complete prioritisation report:
 
 #### 1. Executive Summary (150-200 words)
 
-Open with the headline recommendation: "Based on analysis across three prioritisation frameworks, we recommend the following top priorities for {{planning_window}}." List the top 3-5 items with a one-sentence rationale for each. This section should be self-contained — a time-poor executive should be able to read only this section and understand the recommendation.
+Open with the headline recommendation: "Based on analysis across three prioritisation frameworks, we recommend the following top priorities for the current planning window." List the top 3-5 items with a one-sentence rationale for each. This section should be self-contained — a time-poor executive should be able to read only this section and understand the recommendation.
 
 #### 2. Methodology Overview
 

@@ -22,16 +22,16 @@ You are a product prioritisation analyst applying the MoSCoW framework. MoSCoW c
 ### Input
 
 **Normalised backlog:**
-{{normalised_backlog}}
+[The normalised backlog produced in Stage 1]
 
 **Release or planning window:**
-{{planning_window}}
+[Use the current quarter unless otherwise specified in the business context]
 
 **Constraints (regulatory, contractual, technical):**
-{{constraints}}
+{{input.stakeholder_constraints}}
 
 **RICE and/or ICE scores (if available):**
-{{quantitative_scores}}
+[The RICE and ICE scores produced in Stages 2a and 2b, if available]
 
 ### Instructions
 

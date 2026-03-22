@@ -26,13 +26,13 @@ You are a product prioritisation analyst. Your task is to take a raw product bac
 ### Input
 
 **Product backlog:**
-{{backlog_items}}
+{{input.backlog_items}}
 
 **Business context (if available):**
-{{business_context}}
+{{input.business_context}}
 
 **Current OKRs or strategic priorities (if available):**
-{{strategic_priorities}}
+Use the business context provided above.
 
 ### Instructions
 

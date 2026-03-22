@@ -118,7 +118,7 @@ Run the following three sub-stages in parallel. Each applies a different priorit
 
 ### Output
 
-The final output is a comprehensive prioritisation report containing:
+The final output is a structured prioritisation report containing:
 
 1. **Executive summary** — top 3-5 recommended priorities with one-line rationale each
 2. **Scoring matrices** — RICE, ICE, and MoSCoW results in tabular format
@@ -137,7 +137,10 @@ The final output is a comprehensive prioritisation report containing:
 
 | Name | Required | Description | Example |
 |------|----------|-------------|---------|
-| `{{input.brief}}` | Yes | Primary workflow brief or source content | `Paste a short brief describing the goal, audience, and constraints.` |
+| `{{input.backlog_items}}` | Yes | The product backlog items to prioritise — in any format (list, table, Jira export, plain text) | "1. Self-service onboarding flow 2. Enterprise SSO integration 3. Mobile push notifications 4. Dashboard redesign 5. API rate limiting" |
+| `{{input.business_context}}` | No | Current business objectives, OKRs, or strategic priorities | "Q2 OKR: Increase enterprise ARR by 30%. Q2 OKR: Reduce onboarding drop-off from 60% to 30%." |
+| `{{input.team_capacity}}` | No | Team capacity information for effort estimation | "2 backend engineers, 1 frontend engineer, 1 designer. Sprint velocity ~25 story points." |
+| `{{input.stakeholder_constraints}}` | No | Stakeholder constraints or mandates that may override scoring | "CEO mandated SSO support by end of Q2. Legal requires GDPR audit trail by April." |
 
 ## Outputs
 
@@ -164,6 +167,14 @@ Before running this workflow:
 To test this workflow immediately after import:
 
 ```
-Brief: "Paste a short brief describing the goal, audience, and constraints."
+Backlog Items: "1. Self-service onboarding flow — reduce onboarding time from 15 min to 5 min
+2. Enterprise SSO integration — support Okta and Azure AD for enterprise customers
+3. Mobile push notifications — re-engage users who haven't opened the app in 7+ days
+4. Dashboard redesign — modernise the main dashboard with customisable widgets
+5. API rate limiting — prevent abuse and ensure fair usage across API consumers"
+
+Business Context: "Q2 OKR: Increase enterprise ARR by 30%. Q2 OKR: Reduce onboarding drop-off from 60% to 30%."
+
+Team Capacity: "2 backend engineers, 1 frontend engineer, 1 designer. Sprint velocity ~25 story points."
 ```
 

@@ -22,10 +22,10 @@ You are a product prioritisation analyst applying the ICE scoring framework. ICE
 ### Input
 
 **Normalised backlog:**
-{{normalised_backlog}}
+[The normalised backlog produced in Stage 1]
 
 **RICE scores (if already calculated):**
-{{rice_scores}}
+[The RICE scores produced in Stage 2a, if available]
 
 ### Instructions
 
