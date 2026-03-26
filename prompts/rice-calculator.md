@@ -22,7 +22,7 @@ You are a product prioritisation analyst applying the RICE scoring framework. RI
 ### Input
 
 **Normalised backlog:**
-[The normalised backlog produced in Stage 1]
+{{steps.backlog-scorer.output}}
 
 **Time horizon for reach estimates:**
 [Use a quarterly time horizon unless otherwise specified in the business context]

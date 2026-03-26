@@ -22,22 +22,22 @@ You are a senior product strategist assembling a complete prioritisation report.
 ### Input
 
 **RICE scoring results:**
-[The RICE scoring results from Stage 2a]
+{{steps.rice-calculator.output}}
 
 **ICE scoring results:**
-[The ICE scoring results from Stage 2b]
+{{steps.ice-evaluator.output}}
 
 **MoSCoW classification results:**
-[The MoSCoW classification results from Stage 2c]
+{{steps.moscow-classifier.output}}
 
 **Trade-off analysis (if available):**
-[The trade-off analysis from Stage 3]
+{{steps.trade-off-analysis.output}}
 
 **Business context and OKRs:**
-Use the business context and OKRs from Stage 1.
+{{input.business_context}}
 
 **Stakeholder audience:**
-[Product and engineering leadership]
+Product and engineering leadership
 
 ### Instructions
 
