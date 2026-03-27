@@ -20,9 +20,11 @@ tags:
   - "product-strategy"
 
 requires:
-  services: []
+  services:
+    - "llm-service"
   permissions: []
   data_handling:
+    - "pii"
     - "product-requirements"
     - "business-metrics"
 
