@@ -19,9 +19,15 @@ connections:
     type: uses
   - target: prioritisation-report-generator
     type: uses
+  - target: risk-assessment
+    type: uses
+  - target: risk-assessment-prompt
+    type: uses
   - target: llm-service
     type: runs_on
   - target: prioritisation-frameworks-reference
+    type: references
+  - target: company-okrs
     type: references
   - target: prioritisation-playbook
     type: references

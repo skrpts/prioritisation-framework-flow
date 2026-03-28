@@ -2,7 +2,7 @@ id: "2cd1d8b5-5b23-4952-a05b-fcabc8919125"
 name: "prioritisation-framework-flow"
 display_name: "Prioritisation Framework Flow"
 description: "Apply RICE, ICE, and MoSCoW scoring frameworks to a product backlog and produce ranked recommendations with rationale"
-version: "1.3.0"
+version: "1.4.0"
 engine: ">=1.0.0"
 
 author:
@@ -30,11 +30,11 @@ requires:
     - "business-metrics"
 
 contents:
-  skills: 2
-  prompts: 5
+  skills: 3
+  prompts: 6
   workflows: 1
   services: 1
-  sources: 1
+  sources: 2
   documents: 1
   assets: 1
-  total: 12
+  total: 15
