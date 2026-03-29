@@ -3,7 +3,7 @@ type: document
 id: prioritisation-playbook
 title: Prioritisation Playbook
 description: "Playbook for running prioritisation sessions with teams and stakeholders"
-tags: [Production, Customer-Facing, planning:product, optimisation:prioritisation]
+tags: [Production, Customer-Facing, Optimisation, Planning]
 connections:
   - target: prioritisation-frameworks-reference
     type: references

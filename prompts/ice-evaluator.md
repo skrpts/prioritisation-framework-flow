@@ -3,7 +3,7 @@ type: prompt
 id: ice-evaluator
 title: ICE Evaluator
 description: "Apply ICE scoring (Impact, Confidence, Ease) to a normalised set of product initiatives"
-tags: [Production, planning:product, optimisation:prioritisation]
+tags: [Production, Optimisation, Planning]
 connections:
   - target: scoring-model-application
     type: derived_from

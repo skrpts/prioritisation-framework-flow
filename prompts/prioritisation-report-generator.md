@@ -3,7 +3,7 @@ type: prompt
 id: prioritisation-report-generator
 title: Prioritisation Report Generator
 description: "Generate a structured prioritisation report combining all framework results into ranked recommendations with rationale"
-tags: [Production, planning:product, optimisation:prioritisation]
+tags: [Production, Optimisation, Planning]
 connections:
   - target: trade-off-analysis
     type: derived_from

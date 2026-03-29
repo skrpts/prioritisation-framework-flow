@@ -3,7 +3,7 @@ type: prompt
 id: backlog-scorer
 title: Backlog Scorer
 description: "Score a set of backlog items using a specified framework, producing normalised and consistently calibrated scores"
-tags: [Production, planning:product, optimisation:prioritisation]
+tags: [Production, Agile, Optimisation]
 connections:
   - target: scoring-model-application
     type: derived_from

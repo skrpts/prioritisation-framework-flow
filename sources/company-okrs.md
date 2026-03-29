@@ -3,7 +3,7 @@ type: source
 id: company-okrs
 title: Company OKRs
 description: "Reference template for company objectives and key results used to align product priorities"
-tags: [Production, planning:product, optimisation:prioritisation]
+tags: [Production, Optimisation, Planning]
 connections: []
 metadata:
   source_type: "reference"

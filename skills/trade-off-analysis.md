@@ -3,7 +3,7 @@ type: skill
 id: trade-off-analysis
 title: Trade-off Analysis
 description: "Analysing trade-offs between competing priorities and constraints to surface key tensions and inform decision-making"
-tags: [Production, Tested, planning:product, optimisation:prioritisation]
+tags: [Production, Tested, Optimisation, Planning]
 connections:
   - target: llm-service
     type: runs_on

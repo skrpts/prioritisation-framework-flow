@@ -3,7 +3,7 @@ type: skill
 id: risk-assessment
 title: Risk Assessment
 description: "Identifying, categorising, and evaluating risks to product initiatives with mitigation strategies"
-tags: [Production, Tested, analysis:risk, planning:product]
+tags: [Production, Tested, Optimisation, Risk]
 connections:
   - target: llm-service
     type: runs_on
