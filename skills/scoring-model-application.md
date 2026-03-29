@@ -3,7 +3,7 @@ type: skill
 id: scoring-model-application
 title: Scoring Model Application
 description: "Applying quantitative scoring models (RICE, ICE) to backlog items with consistent methodology and calibrated scoring"
-tags: [Production, Tested]
+tags: [Production, Tested, planning:product, data:quantitative, optimisation:prioritisation]
 connections:
   - target: llm-service
     type: runs_on

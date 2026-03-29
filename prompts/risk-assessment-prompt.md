@@ -3,7 +3,7 @@ type: prompt
 id: risk-assessment-prompt
 title: Risk Assessment Prompt
 description: "Evaluate risks across technical, market, operational, and strategic dimensions with mitigation plans"
-tags: [Production]
+tags: [Production, analysis:risk, planning:product]
 connections:
   - target: risk-assessment
     type: derived_from

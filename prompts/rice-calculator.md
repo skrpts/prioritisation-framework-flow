@@ -3,7 +3,7 @@ type: prompt
 id: rice-calculator
 title: RICE Calculator
 description: "Apply RICE scoring (Reach, Impact, Confidence, Effort) to a normalised set of product initiatives"
-tags: [Production]
+tags: [Production, planning:product, optimisation:prioritisation]
 connections:
   - target: scoring-model-application
     type: derived_from

@@ -3,7 +3,7 @@ type: source
 id: prioritisation-frameworks-reference
 title: Prioritisation Frameworks Reference
 description: "Reference guide to RICE, ICE, MoSCoW, and related prioritisation methodologies"
-tags: [Production, Customer-Facing]
+tags: [Production, Customer-Facing, planning:product, optimisation:prioritisation]
 connections: []
 metadata:
   source_type: "reference-material"

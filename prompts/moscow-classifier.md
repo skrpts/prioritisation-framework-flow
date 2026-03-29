@@ -3,7 +3,7 @@ type: prompt
 id: moscow-classifier
 title: MoSCoW Classifier
 description: "Classify backlog items using the MoSCoW framework (Must Have, Should Have, Could Have, Won't Have) with clear rationale"
-tags: [Production]
+tags: [Production, planning:product, optimisation:prioritisation]
 connections:
   - target: scoring-model-application
     type: derived_from

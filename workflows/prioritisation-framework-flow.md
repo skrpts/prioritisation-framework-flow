@@ -3,7 +3,7 @@ type: workflow
 id: prioritisation-framework-flow
 title: Prioritisation Framework Flow
 description: "Multi-stage pipeline that applies RICE, ICE, and MoSCoW scoring frameworks to a product backlog, producing ranked recommendations with detailed rationale"
-tags: [Production, Tested]
+tags: [Production, Tested, planning:product, optimisation:prioritisation]
 connections:
   - target: scoring-model-application
     type: uses
