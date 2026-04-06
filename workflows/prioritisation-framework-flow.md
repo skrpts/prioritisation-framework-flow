@@ -9,19 +9,7 @@ connections:
     type: uses
   - target: trade-off-analysis
     type: uses
-  - target: backlog-scorer
-    type: uses
-  - target: rice-calculator
-    type: uses
-  - target: ice-evaluator
-    type: uses
-  - target: moscow-classifier
-    type: uses
-  - target: prioritisation-report-generator
-    type: uses
   - target: risk-assessment
-    type: uses
-  - target: risk-assessment-prompt
     type: uses
   - target: llm-service
     type: runs_on
