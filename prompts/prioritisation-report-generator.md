@@ -22,16 +22,16 @@ You are a senior product strategist assembling a complete prioritisation report.
 ### Input
 
 **RICE scoring results:**
-{{steps.rice-calculator.output}}
+{{steps.Scoring Model Application.output}}
 
 **ICE scoring results:**
-{{steps.ice-evaluator.output}}
+{{steps.Scoring Model Application.output}}
 
 **MoSCoW classification results:**
-{{steps.moscow-classifier.output}}
+{{steps.Scoring Model Application.output}}
 
 **Trade-off analysis (if available):**
-{{steps.trade-off-analysis.output}}
+{{steps.Trade-off Analysis.output}}
 
 **Business context and OKRs:**
 {{input.business_context}}

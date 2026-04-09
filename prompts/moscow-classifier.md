@@ -22,7 +22,7 @@ You are a product prioritisation analyst applying the MoSCoW framework. MoSCoW c
 ### Input
 
 **Normalised backlog:**
-{{steps.backlog-scorer.output}}
+{{steps.Scoring Model Application.output}}
 
 **Release or planning window:**
 [Use the current quarter unless otherwise specified in the business context]
@@ -31,8 +31,8 @@ You are a product prioritisation analyst applying the MoSCoW framework. MoSCoW c
 {{input.stakeholder_constraints}}
 
 **RICE and/or ICE scores (if available):**
-- **RICE scores:** {{steps.rice-calculator.output}}
-- **ICE scores:** {{steps.ice-evaluator.output}}
+- **RICE scores:** {{steps.Scoring Model Application.output}}
+- **ICE scores:** {{steps.Scoring Model Application.output}}
 
 ### Instructions
 
