@@ -31,7 +31,7 @@ You are a senior product strategist assembling a complete prioritisation report.
 {{steps.Scoring Model Application.output}}
 
 **Trade-off analysis (if available):**
-{{steps.Trade-off Analysis.output}}
+{{steps.previous.output}}
 
 **Business context and OKRs:**
 {{input.business_context}}
