@@ -25,6 +25,12 @@ metadata:
   estimated_duration: "15-25 minutes"
   avg_tokens: 12000
   trigger: manual
+execution:
+  - skill: "scoring-model-application"
+  - skill: "trade-off-analysis"
+    input_from: "scoring-model-application"
+  - skill: "risk-assessment"
+    input_from: "trade-off-analysis"
 ---
 
 ## Prioritisation Framework Flow
