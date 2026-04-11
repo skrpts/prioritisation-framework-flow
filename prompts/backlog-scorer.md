@@ -4,6 +4,18 @@ id: backlog-scorer
 title: Backlog Scorer
 description: "Score a set of backlog items using a specified framework, producing normalised and consistently calibrated scores"
 tags: [Production, Agile, Optimisation]
+inputs:
+  backlog_items:
+    label: "Backlog Items"
+    description: "The list of backlog items to prioritise"
+    example: "[Paste backlog items — title, description, and any existing scores]"
+    required: true
+    type: text
+  business_context:
+    label: "Business Context"
+    description: "Business Context"
+    required: true
+    type: text
 connections:
   - target: scoring-model-application
     type: derived_from

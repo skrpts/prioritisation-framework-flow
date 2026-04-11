@@ -4,6 +4,12 @@ id: prioritisation-report-generator
 title: Prioritisation Report Generator
 description: "Generate a structured prioritisation report combining all framework results into ranked recommendations with rationale"
 tags: [Production, Optimisation, Planning]
+inputs:
+  business_context:
+    label: "Business Context"
+    description: "Business Context"
+    required: true
+    type: text
 connections:
   - target: trade-off-analysis
     type: derived_from

@@ -4,6 +4,13 @@ id: moscow-classifier
 title: MoSCoW Classifier
 description: "Classify backlog items using the MoSCoW framework (Must Have, Should Have, Could Have, Won't Have) with clear rationale"
 tags: [Production, Agile, Optimisation]
+inputs:
+  stakeholder_constraints:
+    label: "Stakeholder Constraints"
+    description: "Known constraints from stakeholders"
+    example: "Legal requires GDPR review. Finance caps budget at £50k."
+    required: true
+    type: text
 connections:
   - target: scoring-model-application
     type: derived_from

@@ -4,6 +4,13 @@ id: rice-calculator
 title: RICE Calculator
 description: "Apply RICE scoring (Reach, Impact, Confidence, Effort) to a normalised set of product initiatives"
 tags: [Production, Optimisation, Planning]
+inputs:
+  team_capacity:
+    label: "Team Capacity"
+    description: "Available team capacity for the sprint"
+    example: "3 engineers (full-time), 1 designer (50%), 1 QA (full-time)"
+    required: true
+    type: text
 connections:
   - target: scoring-model-application
     type: derived_from
