@@ -8,6 +8,7 @@ inputs:
   business_context:
     label: "Business Context"
     description: "Business Context"
+    example: "Series A fintech startup focused on SMB lending. 18 months post-launch, 2,000 active users, 3 competitors in market."
     required: true
     type: text
 connections:
