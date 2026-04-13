@@ -30,10 +30,8 @@ execution:
     step_type: "synthesis"
   - skill: "trade-off-analysis"
     step_type: "synthesis"
-    input_from: "scoring-model-application"
   - skill: "risk-assessment"
     step_type: "synthesis"
-    input_from: "trade-off-analysis"
 ---
 
 ## Prioritisation Framework Flow
