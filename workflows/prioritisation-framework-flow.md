@@ -25,6 +25,11 @@ metadata:
   estimated_duration: "15-25 minutes"
   avg_tokens: 12000
   trigger: manual
+output_step: "trade-off-analysis"
+composite_steps:
+  - "scoring-model-application"
+  - "trade-off-analysis"
+  - "risk-assessment"
 execution:
   - skill: "scoring-model-application"
     step_type: "synthesis"
