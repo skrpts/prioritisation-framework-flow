@@ -3,7 +3,13 @@ type: skill
 id: risk-assessment
 title: Risk Assessment
 description: "Identifying, categorising, and evaluating risks to product initiatives with mitigation strategies"
-tags: [Production, Tested, Optimisation, Risk]
+tags: [Production, Tested, Planning, Risk]
+context_params:
+  initiative_context:
+    label: "Initiative Context"
+    description: "Context for the initiative — timeline, resources, constraints"
+    default: ""
+    required: true
 connections:
   - target: llm-service
     type: runs_on

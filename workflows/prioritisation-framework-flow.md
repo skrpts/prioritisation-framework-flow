@@ -37,6 +37,8 @@ execution:
     step_type: "synthesis"
   - skill: "risk-assessment"
     step_type: "synthesis"
+    context:
+      initiative_context: ""
 ---
 
 ## Prioritisation Framework Flow
