@@ -11,6 +11,8 @@ connections:
     type: uses
   - target: risk-assessment
     type: uses
+  - target: language-polish
+    type: uses
   - target: llm-service
     type: runs_on
   - target: prioritisation-frameworks-reference
@@ -25,7 +27,7 @@ metadata:
   estimated_duration: "15-25 minutes"
   avg_tokens: 12000
   trigger: manual
-output_step: "trade-off-analysis"
+output_step: "language-polish"
 composite_steps:
   - "scoring-model-application"
   - "trade-off-analysis"
@@ -33,12 +35,15 @@ composite_steps:
 execution:
   - skill: "scoring-model-application"
     step_type: "synthesis"
+    prompt: "rice-calculator"
   - skill: "trade-off-analysis"
     step_type: "synthesis"
   - skill: "risk-assessment"
     step_type: "synthesis"
     context:
       initiative_context: ""
+  - skill: "language-polish"
+    step_type: "content"
 ---
 
 ## Prioritisation Framework Flow
