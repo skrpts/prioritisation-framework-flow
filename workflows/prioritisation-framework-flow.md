@@ -37,12 +37,15 @@ execution:
     step_type: "synthesis"
     prompt: "rice-calculator"
   - skill: "trade-off-analysis"
+    prompt: "prioritisation-report-generator"
     step_type: "synthesis"
   - skill: "risk-assessment"
+    prompt: "risk-assessment-prompt"
     step_type: "synthesis"
     context:
       initiative_context: ""
   - skill: "language-polish"
+    prompt: "polish-language"
     step_type: "content"
 ---
 
