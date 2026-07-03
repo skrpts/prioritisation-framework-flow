@@ -2,7 +2,7 @@ id: "2cd1d8b5-5b23-4952-a05b-fcabc8919125"
 name: "prioritisation-framework-flow"
 display_name: "Prioritisation Framework Flow"
 description: "Apply RICE, ICE, and MoSCoW scoring frameworks to a product backlog and produce ranked recommendations with rationale"
-version: "1.1.24"
+version: "1.1.25"
 engine: ">=0.1.0"
 
 author:
@@ -64,3 +64,17 @@ contents:
   documents: 1
   assets: 1
   total: 11
+
+security:
+  status: "pass"
+  scanned_at: "2026-07-03T11:06:00.268Z"
+  scanner_version: "3.3.0"
+  syntactic: "pass"
+  structural: "pass"
+  detected:
+    services: ["llm-service"]
+    permissions: []
+    data_handling: ["pii"]
+  undeclared: []
+  warnings: []
+  report_url: "https://hub.skrptiq.ai/skrpts/prioritisation-framework-flow/security"

@@ -36,12 +36,15 @@ execution:
   - skill: "scoring-model-application"
     step_type: "synthesis"
     prompt: "rice-calculator"
+    output: { name: "scores", type: "text" }
   - skill: "trade-off-analysis"
     prompt: "prioritisation-report-generator"
     step_type: "synthesis"
+    output: { name: "prioritisation_report", type: "text" }
   - skill: "risk-assessment"
     prompt: "risk-assessment-prompt"
     step_type: "synthesis"
+    output: { name: "risk_assessment", type: "text" }
     context:
       initiative_context: "No additional initiative context"
   - skill: "language-polish"
