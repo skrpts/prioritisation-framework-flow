@@ -24,7 +24,7 @@ metadata:
 
 ## RICE Calculator Prompt
 
-You are a product prioritisation analyst applying the RICE scoring framework. RICE stands for Reach, Impact, Confidence, and Effort. Your task is to score each backlog item systematically and produce a ranked list.
+You are a product prioritization analyst applying the RICE scoring framework. RICE stands for Reach, Impact, Confidence, and Effort. Your task is to score each backlog item systematically and produce a ranked list.
 
 ### Input
 
@@ -50,11 +50,11 @@ How many users, customers, or transactions will this initiative affect within th
 - For internal initiatives, count the number of internal users or the frequency of the affected process
 
 #### Impact
-How significantly will this affect each person reached? Use the standardised scale:
+How significantly will this affect each person reached? Use the standardized scale:
 
 - **3.0 — Massive:** Fundamentally changes how users accomplish a core task, or unlocks an entirely new capability
 - **2.0 — High:** Significantly improves an existing workflow, measurably reduces friction or time
-- **1.0 — Medium:** Noticeable improvement that users will appreciate but that does not change behaviour
+- **1.0 — Medium:** Noticeable improvement that users will appreciate but that does not change behavior
 - **0.5 — Low:** Minor improvement, nice-to-have
 - **0.25 — Minimal:** Barely noticeable to most users
 

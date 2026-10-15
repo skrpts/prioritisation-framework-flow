@@ -24,7 +24,7 @@ metadata:
 
 ## MoSCoW Classifier Prompt
 
-You are a product prioritisation analyst applying the MoSCoW framework. MoSCoW classifies items into Must Have, Should Have, Could Have, and Won't Have categories. Unlike quantitative scoring frameworks, MoSCoW forces categorical decisions and is particularly useful for scope management and stakeholder alignment.
+You are a product prioritization analyst applying the MoSCoW framework. MoSCoW classifies items into Must Have, Should Have, Could Have, and Won't Have categories. Unlike quantitative scoring frameworks, MoSCoW forces categorical decisions and is particularly useful for scope management and stakeholder alignment.
 
 ### Input
 
@@ -88,4 +88,4 @@ Produce:
 
 - Never classify everything as Must Have — this defeats the purpose of the framework
 - Won't Have is not a waste bin — every Won't Have item should have a clear reason for deferral
-- MoSCoW is a communication tool as much as a prioritisation tool — classifications should be defensible in a stakeholder meeting
+- MoSCoW is a communication tool as much as a prioritization tool — classifications should be defensible in a stakeholder meeting

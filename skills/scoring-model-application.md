@@ -17,7 +17,7 @@ metadata:
 
 ## Scoring Model Application
 
-This skill enables the systematic application of quantitative prioritisation frameworks to product backlog items. It covers RICE (Reach, Impact, Confidence, Effort), ICE (Impact, Confidence, Ease), and supports adaptation to custom scoring models.
+This skill enables the systematic application of quantitative prioritization frameworks to product backlog items. It covers RICE (Reach, Impact, Confidence, Effort), ICE (Impact, Confidence, Ease), and supports adaptation to custom scoring models.
 
 ### Core Capabilities
 
@@ -34,7 +34,7 @@ When scoring backlog items, maintain consistency by establishing anchor points b
 RICE scores are calculated as: **(Reach x Impact x Confidence) / Effort**
 
 - **Reach:** How many users or customers will this affect in a defined time period? Express as a number (e.g., "500 users per quarter"). If exact numbers are unavailable, use order-of-magnitude estimates: tens, hundreds, thousands, tens of thousands.
-- **Impact:** How significantly will this affect each user reached? Use a standardised scale: 3 = massive, 2 = high, 1 = medium, 0.5 = low, 0.25 = minimal.
+- **Impact:** How significantly will this affect each user reached? Use a standardized scale: 3 = massive, 2 = high, 1 = medium, 0.5 = low, 0.25 = minimal.
 - **Confidence:** How certain are you about the Reach and Impact estimates? Express as a percentage: 100% = high confidence backed by data, 80% = reasonable estimate, 50% = educated guess, 20% = speculation.
 - **Effort:** How many person-months will this require? Include design, development, testing, and rollout. Round to the nearest 0.5 person-months.
 

@@ -1,8 +1,8 @@
 ---
 type: source
 id: prioritisation-frameworks-reference
-title: Prioritisation Frameworks Reference
-description: "Reference guide to RICE, ICE, MoSCoW, and related prioritisation methodologies"
+title: Prioritization Frameworks Reference
+description: "Reference guide to RICE, ICE, MoSCoW, and related prioritization methodologies"
 tags: [Production, Customer-Facing, Optimisation, Research]
 connections: []
 metadata:
@@ -10,11 +10,11 @@ metadata:
   last_updated: "2026-03-10"
 ---
 
-## Prioritisation Frameworks Reference
+## Prioritization Frameworks Reference
 
 ### RICE Framework
 
-**Origin:** Developed by Intercom's product team as a systematic approach to product prioritisation.
+**Origin:** Developed by Intercom's product team as a systematic approach to product prioritization.
 
 **Components:**
 - **Reach:** The number of people or events affected within a defined time period. Always anchor to a specific timeframe (per quarter, per month) and specify whether you are counting users, accounts, or transactions.
@@ -32,7 +32,7 @@ metadata:
 
 ### ICE Framework
 
-**Origin:** Popularised by Sean Ellis (GrowthHackers) for rapid experiment prioritisation.
+**Origin:** Popularised by Sean Ellis (GrowthHackers) for rapid experiment prioritization.
 
 **Components:**
 - **Impact:** How much this will move the target metric (1-10 scale)

@@ -1,8 +1,8 @@
 ---
 type: document
 id: prioritisation-playbook
-title: Prioritisation Playbook
-description: "Playbook for running prioritisation sessions with teams and stakeholders"
+title: Prioritization Playbook
+description: "Playbook for running prioritization sessions with teams and stakeholders"
 tags: [Production, Customer-Facing, Optimisation, Planning]
 connections:
   - target: prioritisation-frameworks-reference
@@ -12,11 +12,11 @@ metadata:
   last_updated: "2026-03-10"
 ---
 
-## Prioritisation Playbook
+## Prioritization Playbook
 
 ### Purpose
 
-This playbook guides product managers through running effective prioritisation sessions. It covers preparation, facilitation, and follow-through for both solo prioritisation work and collaborative sessions with stakeholders.
+This playbook guides product managers through running effective prioritization sessions. It covers preparation, facilitation, and follow-through for both solo prioritization work and collaborative sessions with stakeholders.
 
 ### Before the Session
 
@@ -37,7 +37,7 @@ This playbook guides product managers through running effective prioritisation s
 #### 3. Choose Your Framework(s)
 
 - **RICE** if you have good data on user reach and want a quantitative ranking
-- **ICE** if you need a fast, intuitive prioritisation pass or are evaluating experiments
+- **ICE** if you need a fast, intuitive prioritization pass or are evaluating experiments
 - **MoSCoW** if the primary goal is scope management and stakeholder alignment
 - **All three** if the backlog is significant and the decision is high-stakes
 
@@ -46,13 +46,13 @@ This playbook guides product managers through running effective prioritisation s
 - Share the backlog with participants 24 hours in advance
 - Ask participants to review items and bring their perspective on impact and effort
 - Prepare a shared scoring sheet (use the scoring matrix template from this skrpt)
-- Set a timer — prioritisation sessions should not exceed 90 minutes
+- Set a timer — prioritization sessions should not exceed 90 minutes
 
 ### During the Session
 
 #### Opening (5 minutes)
 
-State the purpose: "We are here to prioritise [X items] for [planning window]. We will use [framework(s)] and aim to leave with a ranked list and clear next steps."
+State the purpose: "We are here to prioritize [X items] for [planning window]. We will use [framework(s)] and aim to leave with a ranked list and clear next steps."
 
 Confirm the constraints and decision authority.
 
@@ -114,5 +114,5 @@ This step prevents the most common failure mode: different people using differen
 | HiPPO effect | The highest-paid person's opinion overrides scoring | Use silent individual scoring before group discussion |
 | Must Have bloat | Everything is classified as Must Have | Apply the strict test; cap Must Haves at 60% of capacity |
 | Analysis paralysis | The session runs long without decisions | Time-box mercilessly; imperfect decisions now beat perfect decisions later |
-| Scoring theatre | The team scores items but ignores the ranking | Tie prioritisation to resource allocation decisions; make the ranking consequential |
+| Scoring theatre | The team scores items but ignores the ranking | Tie prioritization to resource allocation decisions; make the ranking consequential |
 | Stale backlog | Items on the list are outdated or irrelevant | Prune the backlog before the session; remove items older than 6 months that no one has championed |

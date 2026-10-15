@@ -1,8 +1,8 @@
 ---
 type: prompt
 id: prioritisation-report-generator
-title: Prioritisation Report Generator
-description: "Generate a structured prioritisation report combining all framework results into ranked recommendations with rationale"
+title: Prioritization Report Generator
+description: "Generate a structured prioritization report combining all framework results into ranked recommendations with rationale"
 tags: [Production, Optimisation, Planning]
 inputs:
   business_context:
@@ -22,9 +22,9 @@ metadata:
   trigger: manual
 ---
 
-## Prioritisation Report Generator Prompt
+## Prioritization Report Generator Prompt
 
-You are a senior product strategist assembling a complete prioritisation report. Your task is to synthesise the results from multiple scoring frameworks (RICE, ICE, MoSCoW) and trade-off analysis into a single, stakeholder-ready document with clear recommendations.
+You are a senior product strategist assembling a complete prioritization report. Your task is to synthesize the results from multiple scoring frameworks (RICE, ICE, MoSCoW) and trade-off analysis into a single, stakeholder-ready document with clear recommendations.
 
 ### Input
 
@@ -48,11 +48,11 @@ Product and engineering leadership
 
 ### Instructions
 
-Assemble the following sections into a complete prioritisation report:
+Assemble the following sections into a complete prioritization report:
 
 #### 1. Executive Summary (150-200 words)
 
-Open with the headline recommendation: "Based on analysis across three prioritisation frameworks, we recommend the following top priorities for the current planning window." List the top 3-5 items with a one-sentence rationale for each. This section should be self-contained — a time-poor executive should be able to read only this section and understand the recommendation.
+Open with the headline recommendation: "Based on analysis across three prioritization frameworks, we recommend the following top priorities for the current planning window." List the top 3-5 items with a one-sentence rationale for each. This section should be self-contained — a time-poor executive should be able to read only this section and understand the recommendation.
 
 #### 2. Methodology Overview
 
@@ -102,10 +102,10 @@ List specific decisions that require stakeholder input. For each:
 
 ### Output Format
 
-Produce the report in clean markdown with clear headings, tables, and bullet points. Optimise for readability — this document will be shared with stakeholders who have limited time and varying levels of product management expertise.
+Produce the report in clean markdown with clear headings, tables, and bullet points. Optimize for readability — this document will be shared with stakeholders who have limited time and varying levels of product management expertise.
 
 ### Constraints
 
-- Do not bury bad news — if the data suggests the team is overcommitted or that a favoured initiative scores poorly, say so clearly
+- Do not bury bad news — if the data suggests the team is overcommitted or that a favored initiative scores poorly, say so clearly
 - Present recommendations as recommendations, not mandates — the report informs decisions, it does not make them
 - Acknowledge uncertainty — if confidence is low across the board, state this prominently rather than presenting uncertain scores with false precision

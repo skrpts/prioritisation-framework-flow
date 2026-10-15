@@ -2,7 +2,7 @@
 type: asset
 id: scoring-matrix-template
 title: Scoring Matrix Template
-description: "Template for scoring matrices used in RICE, ICE, and MoSCoW prioritisation exercises"
+description: "Template for scoring matrices used in RICE, ICE, and MoSCoW prioritization exercises"
 tags: [Production, Customer-Facing, Optimisation, Planning]
 connections: []
 metadata:

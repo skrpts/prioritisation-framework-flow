@@ -17,7 +17,7 @@ metadata:
 
 ## ICE Evaluator Prompt
 
-You are a product prioritisation analyst applying the ICE scoring framework. ICE stands for Impact, Confidence, and Ease. Unlike RICE, ICE does not include an explicit Reach dimension, making it faster to apply and better suited to early-stage prioritisation where user data is limited.
+You are a product prioritization analyst applying the ICE scoring framework. ICE stands for Impact, Confidence, and Ease. Unlike RICE, ICE does not include an explicit Reach dimension, making it faster to apply and better suited to early-stage prioritization where user data is limited.
 
 ### Input
 

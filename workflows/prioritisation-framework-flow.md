@@ -1,10 +1,12 @@
 ---
 type: workflow
 id: prioritisation-framework-flow
-title: Prioritisation Framework Flow
+title: Prioritization Framework Flow
 description: "Multi-stage pipeline that applies RICE, ICE, and MoSCoW scoring frameworks to a product backlog, producing ranked recommendations with detailed rationale"
 tags: [Production, Tested, Agile, Optimisation]
 connections:
+  - target: backlog-normalisation
+    type: uses
   - target: scoring-model-application
     type: uses
   - target: trade-off-analysis
@@ -29,10 +31,15 @@ metadata:
   trigger: manual
 output_step: "language-polish"
 composite_steps:
+  - "backlog-normalisation"
   - "scoring-model-application"
   - "trade-off-analysis"
   - "risk-assessment"
 execution:
+  - skill: "backlog-normalisation"
+    prompt: "backlog-scorer"
+    step_type: "synthesis"
+    output: { name: "normalised_backlog", type: "text" }
   - skill: "scoring-model-application"
     step_type: "synthesis"
     prompt: "rice-calculator"
@@ -55,9 +62,9 @@ execution:
       grammar_strictness: "Professional"
 ---
 
-## Prioritisation Framework Flow
+## Prioritization Framework Flow
 
-This workflow takes a raw product backlog and systematically applies multiple prioritisation frameworks to produce a ranked, rationale-backed set of recommendations. It is designed for product managers who need to make defensible prioritisation decisions and communicate them clearly to stakeholders.
+This workflow takes a raw product backlog and systematically applies multiple prioritization frameworks to produce a ranked, rationale-backed set of recommendations. It is designed for product managers who need to make defensible prioritization decisions and communicate them clearly to stakeholders.
 
 ### Prerequisites
 
@@ -84,7 +91,7 @@ Before running this workflow, ensure you have:
 
 #### Stage 2: Parallel Framework Application
 
-Run the following three sub-stages in parallel. Each applies a different prioritisation framework to the normalised backlog.
+Run the following three sub-stages in parallel. Each applies a different prioritization framework to the normalised backlog.
 
 ##### Stage 2a: RICE Scoring
 
@@ -125,8 +132,8 @@ Run the following three sub-stages in parallel. Each applies a different priorit
 - Compare rankings across all three frameworks
 - Identify items that rank consistently high across frameworks (strong candidates)
 - Identify items with significant ranking divergence (require discussion)
-- Analyse trade-offs between competing priorities: quick wins vs. strategic bets, customer-facing vs. internal improvements, revenue-driving vs. cost-saving
-- Produce a trade-off matrix summarising the key tensions
+- Analyze trade-offs between competing priorities: quick wins vs. strategic bets, customer-facing vs. internal improvements, revenue-driving vs. cost-saving
+- Produce a trade-off matrix summarizing the key tensions
 
 #### Stage 4: Report Generation
 
@@ -134,13 +141,13 @@ Run the following three sub-stages in parallel. Each applies a different priorit
 **References:** `scoring-matrix-template`
 
 - Assemble all scoring data, rankings, and trade-off analysis into a structured report
-- Include: executive summary, framework-by-framework results, composite ranking, trade-off analysis, and recommended prioritisation with rationale
+- Include: executive summary, framework-by-framework results, composite ranking, trade-off analysis, and recommended prioritization with rationale
 - Format the output for stakeholder presentation
 - Include a "Decisions Required" section for items where frameworks disagree
 
 ### Output
 
-The final output is a structured prioritisation report containing:
+The final output is a structured prioritization report containing:
 
 1. **Executive summary** — top 3-5 recommended priorities with one-line rationale each
 2. **Scoring matrices** — RICE, ICE, and MoSCoW results in tabular format
@@ -159,7 +166,7 @@ The final output is a structured prioritisation report containing:
 
 | Name | Required | Description | Example |
 |------|----------|-------------|---------|
-| `{{input.backlog_items}}` | Yes | The product backlog items to prioritise — in any format (list, table, Jira export, plain text) | "1. Self-service onboarding flow 2. Enterprise SSO integration 3. Mobile push notifications 4. Dashboard redesign 5. API rate limiting" |
+| `{{input.backlog_items}}` | Yes | The product backlog items to prioritize — in any format (list, table, Jira export, plain text) | "1. Self-service onboarding flow 2. Enterprise SSO integration 3. Mobile push notifications 4. Dashboard redesign 5. API rate limiting" |
 | `{{input.business_context}}` | No | Current business objectives, OKRs, or strategic priorities | "Q2 OKR: Increase enterprise ARR by 30%. Q2 OKR: Reduce onboarding drop-off from 60% to 30%." |
 | `{{input.team_capacity}}` | No | Team capacity information for effort estimation | "2 backend engineers, 1 frontend engineer, 1 designer. Sprint velocity ~25 story points." |
 | `{{input.stakeholder_constraints}}` | No | Stakeholder constraints or mandates that may override scoring | "CEO mandated SSO support by end of Q2. Legal requires GDPR audit trail by April." |
@@ -175,7 +182,7 @@ The final output is a structured prioritisation report containing:
 Before running this workflow:
 
 1. No external services required — paste your content directly and provide any supporting context as inputs or source nodes.
-2. Review the included documents, assets, or source nodes and customise them to match your team, brand, or domain conventions where needed.
+2. Review the included documents, assets, or source nodes and customize them to match your team, brand, or domain conventions where needed.
 3. No specific AI provider or API key is required beyond your configured skrptiq LLM provider.
 
 ## Provider Notes

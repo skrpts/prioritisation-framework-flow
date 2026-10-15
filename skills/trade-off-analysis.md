@@ -2,7 +2,7 @@
 type: skill
 id: trade-off-analysis
 title: Trade-off Analysis
-description: "Analysing trade-offs between competing priorities and constraints to surface key tensions and inform decision-making"
+description: "Analyzing trade-offs between competing priorities and constraints to surface key tensions and inform decision-making"
 tags: [Production, Tested, Optimisation, Planning]
 connections:
   - target: llm-service
@@ -21,7 +21,7 @@ This skill enables rigorous analysis of the tensions between competing product p
 
 #### Identifying Trade-off Dimensions
 
-Product prioritisation typically involves tensions across several dimensions:
+Product prioritization typically involves tensions across several dimensions:
 
 - **Speed vs. quality** — shipping fast with known rough edges vs. polishing before release
 - **Customer value vs. technical investment** — building features users want now vs. reducing technical debt that enables future velocity
@@ -38,19 +38,19 @@ When multiple scoring frameworks have been applied to the same backlog:
 
 1. **Identify consensus items** — items that rank in the top quartile across all frameworks. These are strong candidates regardless of methodology preference.
 2. **Identify divergent items** — items that rank highly on one framework but poorly on another. These are where the interesting decisions live.
-3. **Analyse why divergence occurs** — typically because frameworks weight different things. RICE favours high-reach items; ICE favours easy wins; MoSCoW favours business-critical items. The divergence tells you something about the item's characteristics.
+3. **Analyze why divergence occurs** — typically because frameworks weight different things. RICE favors high-reach items; ICE favors easy wins; MoSCoW favors business-critical items. The divergence tells you something about the item's characteristics.
 4. **Map divergence to strategy** — if your current strategic priority is growth, lean towards RICE rankings. If it is execution velocity, lean towards ICE. If it is risk reduction, lean towards MoSCoW Must Haves.
 
 #### Constraint Analysis
 
-Beyond scoring, real prioritisation must account for hard constraints:
+Beyond scoring, real prioritization must account for hard constraints:
 
 - **Regulatory deadlines** — items with compliance deadlines override scoring
-- **Contractual commitments** — items promised to key accounts may need prioritisation regardless of general scoring
+- **Contractual commitments** — items promised to key accounts may need prioritization regardless of general scoring
 - **Technical dependencies** — some items cannot proceed until prerequisite work is complete, regardless of their priority score
 - **Resource availability** — the highest-priority item is irrelevant if the team with the required skills is fully committed elsewhere
 
-Surface these constraints explicitly. A prioritised list that ignores constraints is a wish list, not a plan.
+Surface these constraints explicitly. A prioritized list that ignores constraints is a wish list, not a plan.
 
 #### Constructing Recommendations
 

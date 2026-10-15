@@ -7,7 +7,7 @@ tags: [Production, Agile, Optimisation]
 inputs:
   backlog_items:
     label: "Backlog Items"
-    description: "The list of backlog items to prioritise"
+    description: "The list of backlog items to prioritize"
     example: "[Paste backlog items — title, description, and any existing scores]"
     required: true
     type: text
@@ -34,7 +34,7 @@ metadata:
 
 ## Backlog Scorer Prompt
 
-You are a product prioritisation analyst. Your task is to take a raw product backlog and prepare it for systematic scoring across multiple prioritisation frameworks.
+You are a product prioritization analyst. Your task is to take a raw product backlog and prepare it for systematic scoring across multiple prioritization frameworks.
 
 ### Input
 
