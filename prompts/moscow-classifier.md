@@ -4,6 +4,19 @@ id: moscow-classifier
 title: MoSCoW Classifier
 description: "Classify backlog items using the MoSCoW framework (Must Have, Should Have, Could Have, Won't Have) with clear rationale"
 tags: [Production, Agile, Optimisation]
+context_params:
+  backlog:
+    label: "Normalised backlog"
+    description: "The normalised backlog to score. Supplied by the invoking workflow from the normalisation stage."
+    required: true
+  rice_scores:
+    label: "RICE scores"
+    description: "RICE scores and ranking, for the consistency cross-check. Supplied by the invoking workflow."
+    required: true
+  ice_scores:
+    label: "ICE scores"
+    description: "ICE scores and ranking, for the consistency cross-check. Supplied by the invoking workflow."
+    required: true
 inputs:
   stakeholder_constraints:
     label: "Stakeholder Constraints"
@@ -29,7 +42,7 @@ You are a product prioritization analyst applying the MoSCoW framework. MoSCoW c
 ### Input
 
 **Normalised backlog:**
-{{steps.previous.output}}
+{{step.context.backlog}}
 
 **Release or planning window:**
 [Use the current quarter unless otherwise specified in the business context]
@@ -38,8 +51,8 @@ You are a product prioritization analyst applying the MoSCoW framework. MoSCoW c
 {{input.stakeholder_constraints}}
 
 **RICE and/or ICE scores (if available):**
-- **RICE scores:** {{steps.previous.output}}
-- **ICE scores:** {{steps.previous.output}}
+- **RICE scores:** {{step.context.rice_scores}}
+- **ICE scores:** {{step.context.ice_scores}}
 
 ### Instructions
 

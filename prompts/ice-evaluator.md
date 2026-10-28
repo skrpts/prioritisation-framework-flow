@@ -4,6 +4,11 @@ id: ice-evaluator
 title: ICE Evaluator
 description: "Apply ICE scoring (Impact, Confidence, Ease) to a normalised set of product initiatives"
 tags: [Production, Optimisation, Planning]
+context_params:
+  backlog:
+    label: "Normalised backlog"
+    description: "The normalised backlog to score. Supplied by the invoking workflow from the normalisation stage."
+    required: true
 connections:
   - target: scoring-model-application
     type: derived_from
@@ -22,10 +27,8 @@ You are a product prioritization analyst applying the ICE scoring framework. ICE
 ### Input
 
 **Normalised backlog:**
-{{steps.previous.output}}
+{{step.context.backlog}}
 
-**RICE scores (if already calculated):**
-{{steps.previous.output}}
 
 ### Instructions
 

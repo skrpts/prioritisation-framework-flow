@@ -4,6 +4,19 @@ id: prioritisation-report-generator
 title: Prioritization Report Generator
 description: "Generate a structured prioritization report combining all framework results into ranked recommendations with rationale"
 tags: [Production, Optimisation, Planning]
+context_params:
+  rice_scores:
+    label: "RICE scoring results"
+    description: "RICE scores and ranking. Supplied by the invoking workflow."
+    required: true
+  ice_scores:
+    label: "ICE scoring results"
+    description: "ICE scores and ranking. Supplied by the invoking workflow."
+    required: true
+  moscow_classification:
+    label: "MoSCoW classification results"
+    description: "MoSCoW classification with rationale. Supplied by the invoking workflow."
+    required: true
 inputs:
   business_context:
     label: "Business Context"
@@ -29,16 +42,14 @@ You are a senior product strategist assembling a complete prioritization report.
 ### Input
 
 **RICE scoring results:**
-{{steps.Scoring Model Application.output}}
+{{step.context.rice_scores}}
 
 **ICE scoring results:**
-{{steps.Scoring Model Application.output}}
+{{step.context.ice_scores}}
 
 **MoSCoW classification results:**
-{{steps.Scoring Model Application.output}}
+{{step.context.moscow_classification}}
 
-**Trade-off analysis (if available):**
-{{steps.previous.output}}
 
 **Business context and OKRs:**
 {{input.business_context}}

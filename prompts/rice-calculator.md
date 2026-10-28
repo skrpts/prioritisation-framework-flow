@@ -4,6 +4,11 @@ id: rice-calculator
 title: RICE Calculator
 description: "Apply RICE scoring (Reach, Impact, Confidence, Effort) to a normalised set of product initiatives"
 tags: [Production, Optimisation, Planning]
+context_params:
+  backlog:
+    label: "Normalised backlog"
+    description: "The normalised backlog to score. Supplied by the invoking workflow from the normalisation stage."
+    required: true
 inputs:
   team_capacity:
     label: "Team Capacity"
@@ -29,7 +34,7 @@ You are a product prioritization analyst applying the RICE scoring framework. RI
 ### Input
 
 **Normalised backlog:**
-{{steps.previous.output}}
+{{step.context.backlog}}
 
 **Time horizon for reach estimates:**
 [Use a quarterly time horizon unless otherwise specified in the business context]

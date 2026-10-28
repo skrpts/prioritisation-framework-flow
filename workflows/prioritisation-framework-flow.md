@@ -9,6 +9,10 @@ connections:
     type: uses
   - target: scoring-model-application
     type: uses
+  - target: ice-scoring
+    type: uses
+  - target: moscow-classification
+    type: uses
   - target: trade-off-analysis
     type: uses
   - target: risk-assessment
@@ -40,26 +44,71 @@ execution:
     prompt: "backlog-scorer"
     step_type: "synthesis"
     output: { name: "normalised_backlog", type: "text" }
-  - skill: "scoring-model-application"
+  - parallel:
+    - skill: "scoring-model-application"
+      step_type: "synthesis"
+      prompt: "rice-calculator"
+      output: { name: "rice_scores", type: "text" }
+      bindings:
+        backlog:
+          from_step: "Backlog Normalisation"
+          field: output
+    - skill: "ice-scoring"
+      step_type: "synthesis"
+      prompt: "ice-evaluator"
+      output: { name: "ice_scores", type: "text" }
+      bindings:
+        backlog:
+          from_step: "Backlog Normalisation"
+          field: output
+  - skill: "moscow-classification"
     step_type: "synthesis"
-    prompt: "rice-calculator"
-    output: { name: "scores", type: "text" }
+    prompt: "moscow-classifier"
+    output: { name: "moscow_classification", type: "text" }
+    bindings:
+      backlog:
+        from_step: "Backlog Normalisation"
+        field: output
+      rice_scores:
+        from_step: "Scoring Model Application"
+        field: output
+      ice_scores:
+        from_step: "ICE Scoring"
+        field: output
   - skill: "trade-off-analysis"
     prompt: "prioritisation-report-generator"
     step_type: "synthesis"
     output: { name: "prioritisation_report", type: "text" }
+    bindings:
+      rice_scores:
+        from_step: "Scoring Model Application"
+        field: output
+      ice_scores:
+        from_step: "ICE Scoring"
+        field: output
+      moscow_classification:
+        from_step: "MoSCoW Classification"
+        field: output
   - skill: "risk-assessment"
     prompt: "risk-assessment-prompt"
     step_type: "synthesis"
     output: { name: "risk_assessment", type: "text" }
     context:
       initiative_context: "No additional initiative context"
+    bindings:
+      source:
+        from_step: "Trade-off Analysis"
+        field: output
   - skill: "language-polish"
     prompt: "polish-language"
     step_type: "content"
     context:
       voice_profile: "Neutral professional tone"
       grammar_strictness: "Professional"
+    bindings:
+      source:
+        from_step: "Risk Assessment"
+        field: output
 ---
 
 ## Prioritization Framework Flow
